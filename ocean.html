@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Океаны Земли: источник жизни</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        h1, h2, h3, h4 {
+            color: #ffffff;
+            font-size: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+        ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+        .top-right {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .theme-toggle {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .theme-toggle.dark {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+    <script>
+        // Display welcome message on page load
+        window.onload = function () {
+            alert('Ласкаво просимо до світу океану!');
+            updateDateTime();
+        };
+
+        // Function to update date and time
+        function updateDateTime() {
+            const now = new Date();
+            const dateTimeElement = document.getElementById('date-time');
+            dateTimeElement.textContent = now.toLocaleString();
+        }
+
+        setInterval(updateDateTime, 1000);
+
+        // Theme toggle functionality
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                body.style.backgroundColor = '#ffffff';
+                body.style.color = '#000000';
+                themeToggleBtn.textContent = 'Темна тема';
+                themeToggleBtn.classList.remove('dark');
+            } else {
+                body.classList.add('dark-theme');
+                body.style.backgroundColor = '#000000';
+                body.style.color = '#ffffff';
+                themeToggleBtn.textContent = 'Світла тема';
+                themeToggleBtn.classList.add('dark');
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="date-time" class="top-right"></div>
+<button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">Темна тема</button>
+<h1>Океаны Земли: источник жизни</h1>
+<p>Океаны покрывают более 70% поверхности Земли и играют ключевую роль в поддержании жизни на планете. Они регулируют климат, обеспечивают жизненно важные ресурсы и являются домом для невероятного разнообразия организмов.</p>
+
+<h2>Значение океанов</h2>
+<p>Океаны обеспечивают нас кислородом, который вырабатывают морские растения, такие как фитопланктон. Они также поглощают углекислый газ и регулируют температуру планеты, помогая смягчить последствия изменения климата.</p>
+
+<h2>Удивительный мир морских обитателей</h2>
+<p>В океанах обитают миллионы видов, от крошечных микроскопических организмов до гигантских китов. Среди них есть:</p>
+<ul>
+    <li>Кораллы, создающие красочные подводные рифы.</li>
+    <li>Морские черепахи, которые путешествуют тысячи километров.</li>
+    <li>Глубоководные существа, адаптированные к экстремальным условиям.</li>
+</ul>
+
+<h3>Угрозы для океанов</h3>
+<p>Несмотря на свою важность, океаны находятся под угрозой из-за:</p>
+<ul>
+    <li>Загрязнения пластиком, которое убивает морских обитателей.</li>
+    <li>Изменения климата, вызывающего повышение уровня моря и окисление воды.</li>
+    <li>Перелов рыбы, разрушающего экосистемы.</li>
+</ul>
+
+<h4>Как мы можем помочь</h4>
+<p>Сохранение океанов требует совместных усилий:</p>
+<ul>
+    <li>Уменьшите использование пластика.</li>
+    <li>Поддерживайте программы по очистке пляжей.</li>
+    <li>Выбирайте устойчиво выловленную рыбу.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="ocean_life.jpg" width="600" height="400">
+</div>
+
+<h4>Заключение</h4>
+<p>Океаны — это не только источник жизни, но и сокровищница, которую мы обязаны сохранить для будущих поколений. Каждый из нас может внести вклад в защиту этого удивительного мира, чтобы сохранить его красоту и богатство на века.</p>
+</body>
+</html>
