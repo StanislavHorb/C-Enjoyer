@@ -67,6 +67,12 @@ build CMakeFiles/firstproject.dir/calculator.cpp.obj: CXX_COMPILER__firstproject
   OBJECT_DIR = CMakeFiles\firstproject.dir
   OBJECT_FILE_DIR = CMakeFiles\firstproject.dir
 
+build CMakeFiles/firstproject.dir/gamestats.cpp.obj: CXX_COMPILER__firstproject_unscanned_Debug C$:/Users/JimboH/CLionProjects/firstproject/gamestats.cpp || cmake_object_order_depends_target_firstproject
+  DEP_FILE = CMakeFiles\firstproject.dir\gamestats.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\firstproject.dir
+  OBJECT_FILE_DIR = CMakeFiles\firstproject.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target firstproject
@@ -75,7 +81,7 @@ build CMakeFiles/firstproject.dir/calculator.cpp.obj: CXX_COMPILER__firstproject
 #############################################
 # Link the executable firstproject.exe
 
-build firstproject.exe: CXX_EXECUTABLE_LINKER__firstproject_Debug CMakeFiles/firstproject.dir/main.cpp.obj CMakeFiles/firstproject.dir/firststep.cpp.obj CMakeFiles/firstproject.dir/calculator.cpp.obj
+build firstproject.exe: CXX_EXECUTABLE_LINKER__firstproject_Debug CMakeFiles/firstproject.dir/main.cpp.obj CMakeFiles/firstproject.dir/firststep.cpp.obj CMakeFiles/firstproject.dir/calculator.cpp.obj CMakeFiles/firstproject.dir/gamestats.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\firstproject.dir

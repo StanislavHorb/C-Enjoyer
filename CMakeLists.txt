@@ -7,4 +7,6 @@ add_executable(firstproject main.cpp
         firststep.cpp
         firststep.h
         calculator.cpp
-        calculator.h)
+        calculator.h
+        gamestats.cpp
+        gamestats.h)
